@@ -14,7 +14,7 @@ $insert = $conn->query($sql);
 if($insert){
     header('location: index.php');
 }else{
-    echo $conn->error;
+    echo $conn->connect_error;
 }
 
 }
